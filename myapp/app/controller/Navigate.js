@@ -73,7 +73,7 @@ Ext.define('MyApp.controller.Navigate', {
             url: 'http://localhost:9639/signup?name=' + nameValue + "&age=" + ageValue + "&gender=" + genderValue + "&income=" + incomeValue + "&userId=" + localStorage.user_id,
             method: 'GET',
             success: function(response) {
-                // console.log(nameValue);
+                 console.log(nameValue);
                 localStorage.setItem('name', nameValue);
                 localStorage.setItem('age', ageValue);
                 localStorage.setItem('gender', genderValue);
